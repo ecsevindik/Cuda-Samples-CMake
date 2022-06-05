@@ -81,7 +81,7 @@ __global__ void xyzw_frequency_thrust_device(int *count, char *text, int n) {
 
 // a bug in Thrust 1.8 causes warnings when this is uncommented
 // so commented out by default -- fixed in Thrust master branch
-#if 0 
+#if 1 
 void xyzw_frequency_thrust_host(int *count, char *text, int n)
 {
   const char letters[] { 'x','y','z','w' };
@@ -106,7 +106,7 @@ int main(int argc, char **argv) {
   checkCudaErrors(cudaMalloc((void **)&d_text, numBytes));
 
   FILE *fp = fopen(filename, "r");
-  if (fp == NULL) {
+  if (fp == nullptr) {
     printf("Cannot find the input text file\n. Exiting..\n");
     return EXIT_FAILURE;
   }
@@ -123,7 +123,7 @@ int main(int argc, char **argv) {
 
   // Try uncommenting one kernel call at a time
   xyzw_frequency<<<8, 256>>>(d_count, d_text, len);
-  xyzw_frequency_thrust_device<<<1, 1>>>(d_count, d_text, len);
+  // xyzw_frequency_thrust_device<<<1, 1>>>(d_count, d_text, len);
   checkCudaErrors(
       cudaMemcpy(&count, d_count, sizeof(int), cudaMemcpyDeviceToHost));
 
