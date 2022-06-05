@@ -27,5 +27,9 @@ include(Settings)
 setupCompilerAndLinker()
 setupExternalLibraries()
 
+
+set(CUDA_PATH /usr/local/cuda)
+
+
 add_subdirectory(Common)
 add_subdirectory(0_Introduction)

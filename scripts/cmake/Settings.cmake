@@ -52,13 +52,13 @@ macro(setupExternalLibraries)
   # Find Threads package
   find_package(Threads REQUIRED)
   if (NOT Threads_FOUND)
-    message(FATAL_ERROR "Threads not found. Util can not be built.")
+    message(FATAL_ERROR "Threads not found. This can not be built.")
   endif()
 
   # Find CUDA package
   find_package(CUDA REQUIRED)
   if (NOT CUDA_FOUND)
-    message(FATAL_ERROR "CUDA not found. Util can not be built.")
+    message(FATAL_ERROR "CUDA not found. This can not be built.")
   endif()
 
 endmacro(setupExternalLibraries)
