@@ -51,15 +51,15 @@ file(COPY ${CUDA_PATH}/include/cooperative_groups
      DESTINATION ${PROJECT_SOURCE_DIR})
 
 cuda_add_executable( ${PROJECT_NAME}
-    ${PROJECT_SOURCE_DIR}/matrixMul.cpp
-    )
+  ${PROJECT_SOURCE_DIR}/matrixMul.cpp
+  )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
-    ${Common_dir}
-    ${CUDA_INCLUDE_DIRS}
-    )
+  ${Common_dir}
+  ${CUDA_INCLUDE_DIRS}
+  )
 
-  target_link_libraries(${PROJECT_NAME}
-    cuda
-    nvrtc
-    )
+target_link_libraries(${PROJECT_NAME}
+  cuda
+  nvrtc
+  )
