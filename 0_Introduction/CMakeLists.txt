@@ -46,7 +46,7 @@ add_subdirectory(cudaOpenMP)
 add_subdirectory(fp16ScalarProduct)
 add_subdirectory(matrixMul)
 add_subdirectory(matrixMul_nvrtc)
-# add_subdirectory(matrixMulDrv) // TODO:
-# add_subdirectory(matrixMulDynLinkJIT) // TODO:
+add_subdirectory(matrixMulDrv) # TODO:
+# add_subdirectory(matrixMulDynLinkJIT) # TODO:
 add_subdirectory(mergeSort)
 add_subdirectory(simpleAssert)

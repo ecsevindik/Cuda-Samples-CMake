@@ -7,4 +7,4 @@ Should be run in Debug mode.
 
 ## Key Concepts
 
-Assert usage in kernel
+Assert usage in kernel, cudaErrorAssert

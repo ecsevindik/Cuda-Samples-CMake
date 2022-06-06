@@ -44,6 +44,7 @@ set(Common_dir ../../Common)
 
 link_directories(${CUDA_PATH}/targets/x86_64-linux/lib/)
 
+
 cuda_add_executable( ${PROJECT_NAME}
     ${PROJECT_SOURCE_DIR}/matrixMulDrv.cpp
     )
@@ -54,4 +55,12 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 
 target_link_libraries(${PROJECT_NAME}
   cuda
+  )
+
+add_custom_command(
+    TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND nvcc -o matrixMul_kernel64.fatbin -fatbin ${PROJECT_SOURCE_DIR}/matrixMul_kernel.cu
+            && cp matrixMul_kernel64.fatbin ${PROJECT_SOURCE_DIR}/
+    DEPENDS
+    VERBATIM
   )
