@@ -1,6 +1,7 @@
 build/
 .vscode/
-
+*/*/cooperative_groups/*
+*/*/cooperative_groups.h
 *.i
 *.ii
 *.gpu
