@@ -27,7 +27,6 @@ macro(setupCompilerAndLinker)
       if (CMAKE_BUILD_TYPE MATCHES DEBUG OR CMAKE_BUILD_TYPE MATCHES Debug OR CMAKE_BUILD_TYPE MATCHES debug)
         # --debug & --device-debug enable debug mode for the cuda host & device code
         set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS}; -std=c++17; --debug; --device-debug; 
-                                              -gencode arch=compute_60,code=sm_60;
                                               -gencode arch=compute_70,code=sm_70;
                                               -gencode arch=compute_75,code=sm_75;
                                               -gencode arch=compute_80,code=sm_80;
@@ -35,7 +34,6 @@ macro(setupCompilerAndLinker)
         )
       else()
         set(CUDA_NVCC_FLAGS ${CUDA_NVCC_FLAGS}; -std=c++17; -O3;
-                                              -gencode arch=compute_60,code=sm_60;
                                               -gencode arch=compute_70,code=sm_70;
                                               -gencode arch=compute_75,code=sm_75
                                               -gencode arch=compute_80,code=sm_80;
