@@ -324,9 +324,9 @@ inline char *sdkFindFilePath(const char *filename,
       "../../../Samples/6_Performance/<executable_name>/",     // up 3 in tree
       "../../Samples/6_Performance/<executable_name>/",        // up 2 in tree
 
-      "../../../../Samples/0_Introduction/<executable_name>/data/",  // up 4 in tree
-      "../../../Samples/0_Introduction/<executable_name>/data/",     // up 3 in tree
-      "../../Samples/0_Introduction/<executable_name>/data/",        // up 2 in tree
+      "../../../../0_Introduction/<executable_name>/data/",  // up 4 in tree
+      "../../../0_Introduction/<executable_name>/data/",     // up 3 in tree
+      "../../0_Introduction/<executable_name>/data/",        // up 2 in tree
 
       "../../../../Samples/1_Utilities/<executable_name>/data/",  // up 4 in tree
       "../../../Samples/1_Utilities/<executable_name>/data/",     // up 3 in tree
