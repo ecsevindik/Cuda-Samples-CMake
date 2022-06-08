@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.12...3.19)
 
 # Project name and a few useful settings. Other commands can pick up the results
 project(
-    simplePrintf
+  simpleSeparateCompilation
     VERSION 1.0.0
-    DESCRIPTION "simplePrintf example."
+    DESCRIPTION "simpleSeparateCompilation example."
     LANGUAGES CXX)
 
 # Only do these if this is the main project, and not if it is included through add_subdirectory
@@ -42,8 +42,14 @@ endif()
 
 set(Common_dir ../../Common)
 
+set(CUDA_SEPARABLE_COMPILATION ON)
+
+file( GLOB_RECURSE CUDASOURCEFILES
+        ./*.cu
+        )
+
 cuda_add_executable( ${PROJECT_NAME}
-  ${PROJECT_SOURCE_DIR}/simplePrintf.cu
+  ${CUDASOURCEFILES}
   )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
