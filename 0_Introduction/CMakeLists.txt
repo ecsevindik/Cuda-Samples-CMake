@@ -75,3 +75,4 @@ add_subdirectory(simpleStreams)
 add_subdirectory(simpleTemplates)
 add_subdirectory(simpleTemplates_nvrtc)
 add_subdirectory(simpleTexture)
+add_subdirectory(simpleTexture3D) # TODO: Includes OpenGL, check again
