@@ -1,12 +1,12 @@
-# simpleLayeredTexture - Simple Layered Texture
+# simplePitchLinearTexture - Pitch Linear Texture
 
 ## Description
 
-Simple example that demonstrates how to use a new CUDA 4.0 feature to support layered Textures in CUDA C.
+Use of Pitch Linear Textures
 
 ## Key Concepts
 
-Texture, Volume Processing
+Texture, Image Processing
 
 * http://cuda-programming.blogspot.com/2013/02/texture-memory-in-cuda-what-is-texture.html
 
