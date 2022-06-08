@@ -62,6 +62,7 @@ add_subdirectory(simpleCUDA2GL) # TODO:
 add_subdirectory(simpleDrvRuntime)
 add_subdirectory(simpleHyperQ)
 add_subdirectory(simpleIPC)
+add_subdirectory(simpleLayeredTexture)
 add_subdirectory(simplePrintf)
 add_subdirectory(simpleMultiGPU)
 add_subdirectory(simpleMultiCopy)
