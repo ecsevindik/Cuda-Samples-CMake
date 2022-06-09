@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.12...3.19)
 
 # Project name and a few useful settings. Other commands can pick up the results
 project(
-    simpleTemplates_nvrtc
+    simpleVoteIntrinsics_nvrtc
     VERSION 1.0.0
-    DESCRIPTION "simplePrintf example."
+    DESCRIPTION "simpleVoteIntrinsics_nvrtc example."
     LANGUAGES CXX)
 
 # Only do these if this is the main project, and not if it is included through add_subdirectory
@@ -45,7 +45,7 @@ set(Common_dir ../../Common)
 link_directories(${CUDA_PATH}/targets/x86_64-linux/lib/)
 
 cuda_add_executable( ${PROJECT_NAME}
-  ${PROJECT_SOURCE_DIR}/simpleTemplates.cpp
+  ${PROJECT_SOURCE_DIR}/simpleVoteIntrinsics.cpp
   )
 
 target_include_directories(${PROJECT_NAME} PUBLIC

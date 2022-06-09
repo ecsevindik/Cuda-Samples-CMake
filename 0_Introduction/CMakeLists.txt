@@ -78,3 +78,4 @@ add_subdirectory(simpleTexture)
 add_subdirectory(simpleTexture3D) # TODO: Includes OpenGL, check again
 add_subdirectory(simpleTextureDrv)
 add_subdirectory(simpleVoteIntrinsics)
+add_subdirectory(simpleVoteIntrinsics_nvrtc)
