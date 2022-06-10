@@ -48,8 +48,8 @@ file( GLOB_RECURSE SOURCEFILES
         )
 
 cuda_add_executable( ${PROJECT_NAME}
-    ${SOURCEFILES}
-    )
+  ${SOURCEFILES}
+  )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
   ${Common_dir}
