@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.12...3.19)
 
 # Project name and a few useful settings. Other commands can pick up the results
 project(
-    FunctionPointers
+    histogram
     VERSION 1.0.0
-    DESCRIPTION "FunctionPointers example."
+    DESCRIPTION "histogram example."
     LANGUAGES CXX)
 
 # Only do these if this is the main project, and not if it is included through add_subdirectory
@@ -53,9 +53,4 @@ cuda_add_executable( ${PROJECT_NAME}
 
 target_include_directories(${PROJECT_NAME} PUBLIC
   ${Common_dir}
-  )
-
-target_link_libraries(${PROJECT_NAME}
-  GL
-  glut
   )

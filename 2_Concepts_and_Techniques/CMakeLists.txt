@@ -45,3 +45,4 @@ add_subdirectory(EGLStream_CUDA_Interop) # TODO:
 # add_subdirectory(EGLSync_CUDAEvent_Interop) # TODO: Compile error
 add_subdirectory(eigenvalues) # TODO: 
 add_subdirectory(FunctionPointers)
+add_subdirectory(histogram)
