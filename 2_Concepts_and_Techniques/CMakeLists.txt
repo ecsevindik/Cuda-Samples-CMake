@@ -65,3 +65,4 @@ add_subdirectory(segmentationTreeThrust) #TODO: Revisit
 add_subdirectory(shfl_scan)
 add_subdirectory(sortingNetworks)
 add_subdirectory(streamOrderedAllocation)
+add_subdirectory(streamOrderedAllocationIPC)
