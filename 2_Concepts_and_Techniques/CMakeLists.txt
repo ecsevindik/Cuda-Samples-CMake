@@ -55,7 +55,7 @@ add_subdirectory(MC_EstimatePiInlineQ)
 add_subdirectory(MC_EstimatePiP)
 add_subdirectory(MC_EstimatePiQ)
 add_subdirectory(MC_SingleAsianOptionP)
-# add_subdirectory(particles)
+add_subdirectory(particles) # TODO: Revisit
 add_subdirectory(radixSortThrust)
 add_subdirectory(scalarProd)
 add_subdirectory(scan)
