@@ -12,6 +12,6 @@ If you prefer command line, just run the following:
 
 ```bash
 mkdir build && cd build
-make <targetName> # (e.g. make boxFilter) or make all, which will take a lot of time
+make <targetName> # (e.g. make boxFilter) or make all, which will take some time
 ./bin/<targetName>
 ```
