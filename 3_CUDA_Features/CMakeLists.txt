@@ -47,5 +47,6 @@ add_subdirectory(cudaCompressibleMemory)
 add_subdirectory(cudaTensorCoreGemm)
 add_subdirectory(dmmaTensorCoreGemm)
 add_subdirectory(globalToShmemAsyncCopy)
-add_subdirectory(graphMemoryFootprint) # TODO:
-add_subdirectory(graphMemoryNodes)
+add_subdirectory(graphMemoryFootprint)
+add_subdirectory(graphMemoryNodes) 
+add_subdirectory(immaTensorCoreGemm)
