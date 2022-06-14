@@ -7,7 +7,7 @@ macro(setupCompilerAndLinker)
       if (CMAKE_BUILD_TYPE MATCHES Debug)
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O0 -Wall -Wuninitialized -fPIC -fPIE") # -Werror
       else()
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -mavx2 -mxsave -mxsavec -mxsaves -O3 -Wall -Wuninitialized -fPIC -fPIE") # -Werror
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O3 -Wall -Wuninitialized -fPIC -fPIE") # -Werror
       endif()
     endif()
 
@@ -16,7 +16,7 @@ macro(setupCompilerAndLinker)
       if (CMAKE_BUILD_TYPE MATCHES Debug)
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O0 -Wall -Wuninitialized -Werror -fPIC")
       else()
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -mavx2 -mxsave -mxsavec -mxsaves -O3 -Wall -Wuninitialized -Werror -fPIC")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O3 -Wall -Wuninitialized -Werror -fPIC")
       endif()
     endif()
   endif()
