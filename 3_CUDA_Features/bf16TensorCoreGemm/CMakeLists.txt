@@ -40,6 +40,19 @@ if(NOT CUDA_FOUND)
   setupExternalLibraries()
 endif()
 
+if (CMAKE_BUILD_TYPE MATCHES DEBUG OR CMAKE_BUILD_TYPE MATCHES Debug OR CMAKE_BUILD_TYPE MATCHES debug)
+        # --debug & --device-debug enable debug mode for the cuda host & device code
+        set(CUDA_NVCC_FLAGS; -std=c++17; --debug; --device-debug; 
+                                              -gencode arch=compute_80,code=sm_80;
+                                              -gencode arch=compute_86,code=sm_86;
+        )
+      else()
+        set(CUDA_NVCC_FLAGS; -std=c++17; -O3;
+                                              -gencode arch=compute_80,code=sm_80;
+                                              -gencode arch=compute_86,code=sm_86;
+        )
+      endif()
+
 set(Common_dir ../../Common)
 
 file( GLOB_RECURSE SOURCEFILES
