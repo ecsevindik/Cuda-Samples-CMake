@@ -44,7 +44,7 @@ set(CUDA_SEPARABLE_COMPILATION ON)
 
 set(Common_dir ../../Common)
 
-link_directories(/usr/local/cuda-11.6/targets/x86_64-linux/lib/)
+link_directories(/usr/local/cuda/targets/x86_64-linux/lib/)
 
 file( GLOB_RECURSE SOURCEFILES
         ./*.cpp
