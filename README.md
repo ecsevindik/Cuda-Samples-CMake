@@ -4,6 +4,11 @@ My personal study on Cuda samples. Building is simplified with CMake. Samples ar
 Some of the samples are modified to understand better.
 Currently tested only on Ubuntu 20.04 with CUDA 11.6.
 
+## Prerequisites
+- OpenGL
+- FreeImage
+- Npp
+
 ## Build and Run
 
 Using VSCode with CMake extension will reveal all the executables. You can then choose and run them using the IDE.
