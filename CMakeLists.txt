@@ -2,9 +2,9 @@
 cmake_minimum_required(VERSION 3.12...3.19)
 
 # Project name and a few useful settings. Other commands can pick up the results
-project(VisiblePcp
+project(CudaSamples
   VERSION 2.0.0
-  DESCRIPTION "Visible Band Per Camera Perception project"
+  DESCRIPTION "Cuda Samples"
   LANGUAGES CXX)
 
 # Optionally set things like CMAKE_CXX_STANDARD, CMAKE_POSITION_INDEPENDENT_CODE here
